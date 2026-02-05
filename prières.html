@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prières</title>
+    <style>
+    /* Style normal des prières */
+    h2 {
+        padding: 5px;
+        transition: background-color 0.5s;
+    }
+
+    /* Surlignage quand l'élément est ciblé par l'ancre */
+    h2:target {
+        background-color: yellow; /* couleur du surlignage */
+        border-radius: 5px;
+        padding: 10px;
+    }
+</style>
 </head>
 <body>
     <div>
-        <a href="Bible project.html">Accueil</a> |
-        <a href="livres.html">Études bibliques</a> |
-        <a href="prières.html">Prières</a>
+        <nav>   <!-- Navigation links added for consistency -->
+            <ul>
+                <li><a href="Bible project.html">Accueil</a></li>
+                <li><a href="livres.html">Études bibliques</a></li>
+                <li><a href="prières.html">Prières</a></li>
+            </ul>
+        </nav>
     </div>
     
     <div>
@@ -21,6 +39,156 @@
 
         <p>
             Vous trouverez ici des prières adaptés à chaque situation.
+        </p>
+
+        <p>
+            Alors, dites moi... Comment vous sentez-vous aujourd'hui ?
+        </p>
+
+        <details>
+            <summary>Je ressent :</summary>
+            <ul>
+                <li><a href="#gratitude">Gratitude</a></li>
+                <li><a href="#tristesse">Tristesse</a></li>
+                <li><a href="#joie">Joie</a></li>
+                <li><a href="#peur-anxiete">Peur / Anxiété</a></li>
+                <li><a href="#colere">Colère</a></li>
+                <li><a href="#amour">Amour</a></li>
+                <li><a href="#protection">Protection</a></li>
+                <li><a href="#culpabilite-repentance">Culpabilité / Repentance</a></li>
+                <li><a href="#reconnaissance">Reconnaissance</a></li>
+                <li><a href="#solitude">Solitude</a></li>
+                <li><a href="#decouragement">Découragement</a></li>
+                <li><a href="#desir-de-se-rapprocher-de-dieu">Désir de se rapprocher de Dieu</a></li>
+            </ul>
+        </details>
+    </div>
+
+    <div>
+        <h2 id="gratitude">🙏 Gratitude</h2>
+
+        <p>Seigneur, je Te remercie pour les bénédictions que Tu as versées sur ma vie. 
+            Merci pour Ton amour inconditionnel, Ta grâce infinie et Ta fidélité constante. 
+            Aide-moi à toujours reconnaître Tes bienfaits et à vivre dans la gratitude chaque jour. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="tristesse">😢 Tristesse</h2>
+
+        <p>Seigneur, mon cœur est lourd et mes larmes sont nombreuses. 
+            Tu vois ce que je traverse, même ce que je n'arrive pas à exprimer. 
+            Viens me consoler, me relever et me rappeler que Tu es proche de ceux qui ont le cœur brisé. 
+            Je place ma peine entre Tes mains. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="joie">😌 Joie</h2>
+
+        <p>Seigneur, je Te remercie pour la joie que Tu donnes dans mon cœur. 
+            Merci pour Ton amour, Ta paix et Ta bénédiction. 
+            Aide-moi à toujours célébrer Tes bienfaits et à vivre dans la joie chaque jour. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="peur-anxiete">😨 Peur / Anxiété</h2>
+
+        <p>
+            Seigneur, la peur m'envahit et mes pensées s'agitent. 
+            Je choisis de me confier en Toi plutôt qu'en mes inquiétudes. 
+            Remplis-moi de Ta paix, rappelle-moi que Tu es avec moi et que je ne suis jamais seul. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="colere">😡 Colère</h2>
+
+        <p>
+            Dieu juste et patient, ma colère me dépasse. 
+            Aide-moi à ne pas réagir selon la chair mais selon Ton Esprit. 
+            Apaise mon cœur, enlève l'amertume et apprends-moi à pardonner comme Tu m'as pardonné. 
+            Amen. 
+        </p>
+    </div>
+
+    <div>
+        <h2 id="amour">❤️ Amour</h2>
+
+        <p>
+            Seigneur, Tu es la source de l'amour véritable. 
+            Apprends-moi à aimer comme Tu aimes : avec vérité, patience et humilité. 
+            Que mon amour reflète Ton cœur, dans mes paroles et dans mes actes. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="protection">🙏 Prière de protection</h2>
+
+        <p>
+            Seigneur, je Te demande de me protéger, moi et mes proches, contre tout mal. 
+            Entoure-nous de Ton bouclier de protection, garde-nous en sécurité et guide-nous sur le chemin de la vie. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="culpabilite-repentance">😔 Culpabilité / Repentance</h2>
+
+        <p>
+            Père, je reconnais mes fautes devant Toi. 
+            Je Te demande pardon et je me détourne de ce qui Te déplaît. 
+            Merci pour Ta grâce et pour le pardon offert en Jésus-Christ. 
+            Purifie mon cœur et renouvelle-moi. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="reconnaissance">🙌 Reconnaissance</h2>
+
+        <p>
+            Seigneur, merci pour tout ce que Tu fais, même ce que je ne vois pas toujours. 
+            Merci pour la vie, la protection, la nourriture, et surtout pour Ton amour fidèle. 
+            Je veux Te louer en toute circonstance. 
+            Amen. 
+        </p>
+    </div>
+
+    <div>
+        <h2 id="solitude">😞 Solitude</h2>
+
+        <p>
+            Dieu fidèle, je me sens seul, mais je sais que Tu ne m'abandonnes jamais. 
+            Viens remplir ce vide en moi et rappelle-moi que Tu marches avec moi chaque jour. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="decouragement">💪 Découragement</h2>
+
+        <p>
+            Seigneur, mes forces diminuent et mon courage vacille. 
+            Redonne-moi l'espérance, renouvelle ma foi et aide-moi à persévérer. 
+            Je veux m'appuyer sur Toi et non sur mes propres forces. 
+            Amen.
+        </p>
+    </div>
+
+    <div>
+        <h2 id="desir-de-se-rapprocher-de-dieu">🔥 Désir de se rapprocher de Dieu</h2>
+
+        <p>
+            Père, je désire Te connaître davantage. 
+            Attire mon cœur vers Toi, donne-moi soif de Ta Parole et apprends-moi à marcher chaque jour selon Ta volonté. 
+            Amen.
         </p>
     </div>
 </body>
