@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian test site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <nav>   <!-- Navigation links added for consistency -->
-            <ul>
+        <nav>  
+            <!-- GAUCHE : nom du site -->
+            <div class="nav-left">
+                <span class="site-name">BibleStudy</span>
+            </div>
+            
+             <!-- Navigation links added for consistency -->
+            <ul class="menu">
                 <li><a href="Bible project.html">Accueil</a></li>
                 <li><a href="livres.html">Études bibliques</a></li>
                 <li><a href="prières.html">Prières</a></li>
             </ul>
+
+            <!-- CENTRE : recherche -->
+            <div class="nav-center">
+                <input type="search" placeholder="Rechercher dans BibleStudy.com" />
+            </div>
+
+            <!-- DROITE : langue + profil -->
+            <div class="nav-right">
+                <select>
+                <option>FR</option>
+                <option>EN</option>
+                <option>JP</option>
+                </select>
+
+                <span class="profile-icon">👤</span>
+            </div>
         </nav>
     </div>
 
     <div>
-        <img src="images/lion-sheep.jpg" alt="Lion et l'agneau" height="300" style="float: left; margin-right: 20px;">
+        <img class="image-accueil-gauche" src="images/lion-sheep.jpg" alt="Lion et l'agneau" height="300">
     </div>
 
     <div>
@@ -96,7 +119,7 @@
     </div>
 
     <div>
-        <img src="images/study-bible.jpg" alt="Bible en étude" height="250" style="float: left; margin-right: 20px;">
+        <img class="image-accueil-gauche" src="images/study-bible.jpg" alt="Bible en étude" height="250">
         <h2>Comment méditer la Parole de Dieu ?</h2>
 
         <ol>

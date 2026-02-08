@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prières</title>
+    <link rel="stylesheet" href="style.css">
     <style>
+    /* Probable que je déplace ce style dans le fichier CSS plus tard, mais pour l'instant je le laisse ici par simplicité. */
     /* Style normal des prières */
     h2 {
         padding: 5px;
@@ -21,12 +23,34 @@
 </head>
 <body>
     <div>
-        <nav>   <!-- Navigation links added for consistency -->
-            <ul>
+        <nav>  
+            <!-- GAUCHE : nom du site -->
+            <div class="nav-left">
+                <span class="site-name">BibleStudy</span>
+            </div>
+            
+             <!-- Navigation links added for consistency -->
+            <ul class="menu">
                 <li><a href="Bible project.html">Accueil</a></li>
                 <li><a href="livres.html">Études bibliques</a></li>
                 <li><a href="prières.html">Prières</a></li>
             </ul>
+
+            <!-- CENTRE : recherche -->
+            <div class="nav-center">
+                <input type="search" placeholder="Rechercher dans BibleStudy.com" />
+            </div>
+
+            <!-- DROITE : langue + profil -->
+            <div class="nav-right">
+                <select>
+                <option>FR</option>
+                <option>EN</option>
+                <option>JP</option>
+                </select>
+
+                <span class="profile-icon">👤</span>
+            </div>
         </nav>
     </div>
     
@@ -47,7 +71,7 @@
 
         <details>
             <summary>Je ressent :</summary>
-            <ul>
+            <ul class="emotions">
                 <li><a href="#gratitude">Gratitude</a></li>
                 <li><a href="#tristesse">Tristesse</a></li>
                 <li><a href="#joie">Joie</a></li>
@@ -65,7 +89,7 @@
     </div>
 
     <div>
-        <h2 id="gratitude">🙏 Gratitude</h2>
+        <h2 id="gratitude" class="section-priere">🙏 Gratitude</h2>
 
         <p><em>Cette prière est là pour toi. Prends le temps.</em></p>
 
@@ -77,7 +101,7 @@
     </div>
 
     <div>
-        <h2 id="tristesse">😢 Tristesse</h2>
+        <h2 id="tristesse" class="section-priere">😢 Tristesse</h2>
 
         <p>Seigneur, mon cœur est lourd et mes larmes sont nombreuses. 
             Tu vois ce que je traverse, même ce que je n'arrive pas à exprimer. 
@@ -88,7 +112,7 @@
     </div>
 
     <div>
-        <h2 id="joie">😌 Joie</h2>
+        <h2 id="joie" class="section-priere">😌 Joie</h2>
 
         <p>Seigneur, je Te remercie pour la joie que Tu donnes dans mon cœur. 
             Merci pour Ton amour, Ta paix et Ta bénédiction. 
@@ -98,7 +122,7 @@
     </div>
 
     <div>
-        <h2 id="peur-anxiete">😨 Peur / Anxiété</h2>
+        <h2 id="peur-anxiete" class="section-priere">😨 Peur / Anxiété</h2>
 
         <p>
             Seigneur, la peur m'envahit et mes pensées s'agitent. 
@@ -109,7 +133,7 @@
     </div>
 
     <div>
-        <h2 id="colere">😡 Colère</h2>
+        <h2 id="colere" class="section-priere">😡 Colère</h2>
 
         <p>
             Dieu juste et patient, ma colère me dépasse. 
@@ -120,7 +144,7 @@
     </div>
 
     <div>
-        <h2 id="amour">❤️ Amour</h2>
+        <h2 id="amour" class="section-priere">❤️ Amour</h2>
 
         <p>
             Seigneur, Tu es la source de l'amour véritable. 
@@ -131,7 +155,7 @@
     </div>
 
     <div>
-        <h2 id="protection">🙏 Prière de protection</h2>
+        <h2 id="protection" class="section-priere">🙏 Prière de protection</h2>
 
         <p>
             Seigneur, je Te demande de me protéger, moi et mes proches, contre tout mal. 
@@ -141,7 +165,7 @@
     </div>
 
     <div>
-        <h2 id="culpabilite-repentance">😔 Culpabilité / Repentance</h2>
+        <h2 id="culpabilite-repentance" class="section-priere">😔 Culpabilité / Repentance</h2>
 
         <p>
             Père, je reconnais mes fautes devant Toi. 
@@ -153,7 +177,7 @@
     </div>
 
     <div>
-        <h2 id="reconnaissance">🙌 Reconnaissance</h2>
+        <h2 id="reconnaissance" class="section-priere">🙌 Reconnaissance</h2>
 
         <p>
             Seigneur, merci pour tout ce que Tu fais, même ce que je ne vois pas toujours. 
@@ -164,7 +188,7 @@
     </div>
 
     <div>
-        <h2 id="solitude">😞 Solitude</h2>
+        <h2 id="solitude" class="section-priere">😞 Solitude</h2>
 
         <p>
             Dieu fidèle, je me sens seul, mais je sais que Tu ne m'abandonnes jamais. 
@@ -174,7 +198,7 @@
     </div>
 
     <div>
-        <h2 id="decouragement">💪 Découragement</h2>
+        <h2 id="decouragement" class="section-priere">💪 Découragement</h2>
 
         <p>
             Seigneur, mes forces diminuent et mon courage vacille. 
@@ -185,7 +209,7 @@
     </div>
 
     <div>
-        <h2 id="desir-de-se-rapprocher-de-dieu">🔥 Désir de se rapprocher de Dieu</h2>
+        <h2 id="desir-de-se-rapprocher-de-dieu" class="section-priere">🔥 Désir de se rapprocher de Dieu</h2>
 
         <p>
             Père, je désire Te connaître davantage. 

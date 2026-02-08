@@ -1,0 +1,148 @@
+/* style.css - CSS file for styling the Bible project webpage */
+/* This stylesheet defines the visual appearance of the webpage, including fonts, colors, and layout. */
+/* The body of the webpage uses Arial font, with a line height of 1.6 for better readability and a margin of 20px around the content. */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: white; /* background color for the entire page */
+    padding-top: 60px; /* to prevent content from being hidden behind the fixed navigation bar */
+}
+
+/* The h1 and h2 headings have specific colors to differentiate them from the rest of the text. */
+h1 {
+    color: #4a3f35;
+}
+
+h2 {
+    color: #6b5b4b;
+}
+
+/* Paragraphs have a dark gray color, a margin at the bottom for spacing, and a maximum width to improve readability on larger screens. */
+p {
+    color: #333;
+    margin-bottom: 15px;
+    max-width: 900px;
+}
+
+/* The images on the homepage are styled to float to the left or right, with margins to create space between the images and the text. The width of the images is set to 300px for consistency. */
+.image-accueil-gauche {
+    float: left;
+    margin-right: 20px;
+}
+
+.image-accueil-droite {
+    float: right;
+    margin-left: 20px;
+}
+
+/* The navigation menu is styled to remove the default list styling, display the links horizontally, and add spacing between the links. */
+.menu {
+    list-style: none;      /* supprime les points */
+    padding: 0;
+    max-width: 1000px;
+    margin: 0;
+    margin-right: 30px;
+    display: flex;         /* menu horizontal */
+    gap: 20px;             /* espace entre les liens */
+}
+
+.menu a {
+    text-decoration: none;     /* enlève le soulignement */
+    color: #4a3f35;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #6b5b4b;           /* couleur au survol */
+     text-decoration: underline; /* souligne le lien au survol */
+}
+
+/*The navigation bar is framed. */
+nav {
+    position: fixed; /* fixe la barre de navigation en haut de la page */
+    top: 0; /* positionne la barre de navigation en haut de la page */
+    left: 0; /* positionne la barre de navigation à gauche de la page */
+    width: 100%;
+    background-color: white; /* couleur de fond pour que le texte soit lisible */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000; /* assure que la barre de navigation reste au-dessus du contenu */
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+/* PARTIE GAUCHE */
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a3f35;
+    margin-right: 30px;
+}
+
+/* PARTIE CENTRE */
+.nav-center input {
+    width: 280px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 30px;
+}
+
+/* PARTIE DROITE */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right select {
+    padding: 5px 10px; /*espace à l'intérieur du menu déroulant */
+    border-radius: 8px; /* coins arrondis pour le menu déroulant */
+    border: 1px solid #ccc; /* bordure légère pour le menu déroulant */
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    appearance: none; /* supprime les styles par défaut du menu déroulant */
+}
+
+.nav-right select:hover {
+    outline: 5px solid #6b5b4b; /* ajoute une bordure au survol du menu déroulant */
+    color: black; /* change la couleur du texte au survol */
+}
+
+.profile-icon {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* rend l'icône circulaire */
+    background-color: white; /* couleur de fond pour l'icône de profil */
+    color: white; /* couleur du texte pour l'icône de profil */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* transition pour un effet de survol plus fluide */
+}
+
+.profile-icon:hover {
+    background-color: #6b5b4b; /* change la couleur de fond au survol */
+    color: white; /* garde la couleur du texte blanche au survol */
+}
+
+.emotions {
+    list-style: none; /* supprime les points de la liste */
+    padding: 0;
+    display: flex; /* affiche les éléments de la liste en ligne */
+    gap: 15px; /* espace entre les éléments de la liste */
+
+}
+
+.section-priere {
+    scroll-margin-top: 80px; /* espace pour éviter que le titre ne soit caché derrière la barre de navigation */
+}
